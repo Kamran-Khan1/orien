@@ -149,6 +149,16 @@
   p {
     font-size: 1.5rem;
   }
+  .contact h6 {
+    font-size: 25px;
+  }
+  .links a {
+    margin: 12px;
+    padding: 10px;
+  }
+  .contact p {
+    margin-top: 40px;
+  }
 }
 
 .footer {
