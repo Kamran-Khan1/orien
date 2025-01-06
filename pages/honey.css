@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.c-image img {
+  width: 100%;
+}
+
+.item {
+  width: 45%;
+  border: 1px solid grey;
+}
+
+.title a {
+  border: 2px solid rgb(8, 50, 77);
+  text-decoration: none;
+  color: white;
+  background-color: rgb(8, 50, 77);
+  padding: 5px;
+}
+
+.title a:hover {
+  color: rgb(8, 50, 77);
+  border: 2px solid rgb(8, 50, 77);
+  background: none;
+}
+
+.title {
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.title p {
+  text-decoration: line-through;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.middle {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+  .item {
+    width: 25%;
+  }
+  .carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: fill;
+  }
+  .scroller {
+    font-size: 30px;
+    height: 60px;
+  }
+  .deal {
+    font-size: 34px;
+    margin: 30px;
+  }
+  .title {
+    margin: 30px;
+  }
+  .title a {
+    font-size: 25px;
+    padding: 10px;
+  }
+  .title h6,
+  strong,
+  p {
+    font-size: 1.5rem;
+  }
+  .contact h6 {
+    font-size: 25px;
+  }
+  .links a {
+    margin: 12px;
+    padding: 10px;
+  }
+  .contact p {
+    margin-top: 40px;
+  }
+}
+
+.footer {
+  display: flex;
+  font-size: 13px;
+  line-height: 0.1;
+  background-color: rgb(8, 50, 77);
+  color: rgb(255, 255, 255);
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact h6 {
+  margin-bottom: 10px;
+}
+
+.links a {
+  margin: 5px;
+}
+
+.search {
+  width: 200px;
+  margin: 0 auto;
+}
+
+/* organic */
+
+.deal {
+  text-align: center;
+  color: rgb(3, 46, 63);
+  font-family: cursive;
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: bold;
+  text-decoration: underline;
+}
