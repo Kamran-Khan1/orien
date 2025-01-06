@@ -180,3 +180,8 @@
 .links a {
   margin: 5px;
 }
+
+.search {
+  width: 200px;
+  margin: 0 auto;
+}
