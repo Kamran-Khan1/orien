@@ -8,6 +8,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
+    <style>
+      select {
+        background-color: rgba(255, 255, 255, 0.783);
+        border: 1px solid rgb(219, 219, 219);
+        width: 200px;
+        height: 30px;
+      }
+    </style>
   </head>
   <body>
     <div class="order">
@@ -28,6 +36,7 @@
               type="text"
               placeholder="Your Name"
               name="Customer Name"
+              required
             />
           </div>
         </div>
@@ -47,12 +56,13 @@
         <div class="field">
           <label class="label">ঠিকানাঃ</label>
           <div class="control">
-            <input
-              class="input"
-              type="text"
-              placeholder="Your Address"
-              name="Address"
-            />
+            <select required name="City" id="City">
+              <option value="">সিলেক্ট সিটি</option>
+              <option value="সিটির ভেতরে">খুলনা সিটির ভেতরে</option>
+              <option value="ঢাকার ভেতরে">ঢাকার ভেতরে</option>
+              <option value="সিটির আশেপাশে">খুলনা সিটির আশেপাশে</option>
+              <option value="সিটির বাইরে">খুলনা সিটির বাইরে</option>
+            </select>
           </div>
         </div>
 
@@ -64,6 +74,7 @@
               type="tel"
               placeholder="Your Mobile"
               name="Mobile"
+              required
             />
           </div>
         </div>
@@ -96,7 +107,12 @@
           <label class="label">ডেলিভারিঃ</label>
           <div class="control">
             <label class="checkbox">
-              <input type="checkbox" name="Cash On Delivery" value="yes" />
+              <input
+                type="checkbox"
+                required
+                name="Cash On Delivery"
+                value="yes"
+              />
               ক্যাশ অন ডেলিভারি
             </label>
           </div>
@@ -105,7 +121,8 @@
         <div class="field">
           <label class="label">কেজিঃ</label>
           <div class="control">
-            <select name="Quantity" id="Quantity">
+            <select required name="Quantity" id="Quantity">
+              <option value="">select quantity</option>
               <option value="0.5">0.5</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -113,6 +130,20 @@
               <option value="4">4</option>
               <option value="5">5</option>
             </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Total:-</label>
+          <div class="control">
+            <input
+              id="total"
+              class="input"
+              type="tel"
+              placeholder="Total"
+              name="Mobile"
+              readonly
+            />
           </div>
         </div>
 
@@ -152,7 +183,7 @@
         border-color: aquamarine;
       "
     ></div>
-
+    <script src="costing.js"></script>
     <script>
       document.getElementById("form").addEventListener("submit", function (e) {
         e.preventDefault(); // Prevent the default form submission
