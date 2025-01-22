@@ -18,16 +18,27 @@
 }
 
 .title a {
-  border: 2px solid rgb(8, 50, 77);
+  border: 1px solid rgb(8, 50, 77);
   text-decoration: none;
   color: white;
   background-color: rgb(8, 50, 77);
   padding: 5px;
+  font-size: 13px;
+}
+
+.title .details {
+  background-color: white;
+  color: rgb(8, 50, 77);
+}
+
+.title .details:hover {
+  color: white;
+  background-color: rgb(8, 50, 77);
 }
 
 .title a:hover {
   color: rgb(8, 50, 77);
-  border: 2px solid rgb(8, 50, 77);
+  border: 1px solid rgb(8, 50, 77);
   background: none;
 }
 
