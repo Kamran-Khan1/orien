@@ -1,4 +1,5 @@
-const quantity = document.getElementById("Quantity");
+const quantity1 = document.getElementById("Quantity-patali");
+const quantity2 = document.getElementById("Quantity-jhola");
 const displayTotal = document.getElementById("total");
 const city = document.getElementById("City");
 const data = [
@@ -9,13 +10,20 @@ const data = [
 ];
 
 // Initialize the total value
-let baseTotal = 0;
+let baseTotal1 = 0;
 let cityCharge = 0;
+let baseTotal2 = 0;
+//handle quantity2 changes
+quantity2.addEventListener("change", () => {
+  const selectedQuantity = quantity2.value;
+  baseTotal2 = selectedQuantity * 490;
+  updateTotal();
+});
 
-// Handle quantity changes
-quantity.addEventListener("change", () => {
-  const selectedQuantity = quantity.value;
-  baseTotal = selectedQuantity * 1800;
+// Handle quantity1 changes
+quantity1.addEventListener("change", () => {
+  const selectedQuantity = quantity1.value;
+  baseTotal1 = selectedQuantity * 450;
 
   // Update total value dynamically
   updateTotal();
@@ -35,5 +43,5 @@ city.addEventListener("change", () => {
 
 // Function to update the total value
 function updateTotal() {
-  displayTotal.value = baseTotal + cityCharge;
+  displayTotal.value = baseTotal1 + cityCharge + baseTotal2;
 }
