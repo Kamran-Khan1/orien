@@ -23,7 +23,7 @@
       <section class="hero is-primary is-bold">
         <div class="hero-body">
           <div class="container">
-            <h1 class="title">অর্ডার করিঃ</h1>
+            <h1 class="title">মধু অর্ডার করিঃ</h1>
           </div>
         </div>
       </section>
@@ -158,6 +158,20 @@
           </div>
         </div>
 
+        <div
+          id="message"
+          style="
+            display: none;
+            margin: 20px;
+            font-weight: bold;
+            color: green;
+            padding: 8px;
+            background-color: beige;
+            border-radius: 4px;
+            border-color: aquamarine;
+          "
+        ></div>
+
         <div class="field is-grouped">
           <div class="control">
             <button class="button is-primary" type="submit" id="submit-button">
@@ -170,20 +184,7 @@
         </div>
       </form>
     </div>
-    <div
-      id="message"
-      style="
-        display: none;
-        margin: 20px;
-        font-weight: bold;
-        color: green;
-        padding: 8px;
-        background-color: beige;
-        border-radius: 4px;
-        border-color: aquamarine;
-      "
-    ></div>
-    <script src="costing.js"></script>
+    <script src="./costing-honey.js"></script>
     <script>
       document.getElementById("form").addEventListener("submit", function (e) {
         e.preventDefault(); // Prevent the default form submission
@@ -223,7 +224,7 @@
           .then(function (data) {
             // Display a success message
             document.getElementById("message").textContent =
-              "Data submitted successfully!";
+              "অর্ডার সফলভাবে সম্পন্ন হয়েছে";
             document.getElementById("message").style.display = "block";
             document.getElementById("message").style.backgroundColor = "green";
             document.getElementById("message").style.color = "beige";
