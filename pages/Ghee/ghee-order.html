@@ -23,7 +23,7 @@
       <section class="hero is-primary is-bold">
         <div class="hero-body">
           <div class="container">
-            <h1 class="title">গুড় অর্ডার করিঃ</h1>
+            <h1 class="title">ঘি অর্ডার করিঃ</h1>
           </div>
         </div>
       </section>
@@ -119,56 +119,16 @@
         </div>
 
         <div class="field">
-          <label class="label">পাটালি গুড়ঃ</label>
+          <label class="label">কেজিঃ</label>
           <div class="control">
-            <select name="Quantity-patali" id="Quantity-patali">
+            <select required name="Quantity" id="Quantity">
               <option value="">select quantity</option>
-              <option value="1">1 kg</option>
-              <option value="2">2 kg</option>
-              <option value="3">3 kg</option>
-              <option value="4">4 kg</option>
-              <option value="5">5 kg</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="field">
-          <label class="label">ঝোলা গুড়ঃ</label>
-          <div class="control">
-            <select name="Quantity-jhola" id="Quantity-jhola">
-              <option value="">select quantity</option>
-              <option value="0.5">half kg</option>
-              <option value="1">1 kg</option>
-              <option value="2">2 kg</option>
-              <option value="3">3 kg</option>
-              <option value="4">4 kg</option>
-              <option value="5">5 kg</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="field">
-          <label class="label">প্রাইম মাসালা পাটালিঃ</label>
-          <div class="control">
-            <select name="Quantity-PrimeMasala" id="Quantity-PrimeMasala">
-              <option value="">select quantity</option>
-              <option value="1">1 kg</option>
-              <option value="2">2 kg</option>
-              <option value="3">3 kg</option>
-              <option value="4">4 kg</option>
-              <option value="5">5 kg</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="field">
-          <label class="label">Marge COMBO🥳:-</label>
-          <div class="control">
-            <select name="Quantity-Marge" id="Quantity-Marge">
-              <option value="">select quantity</option>
-              <option value="1">
-                হাফ kg ঘি + ১kg ঝোলা + ১kg মাসালা পাটালি
-              </option>
+              <option value="0.5">0.5</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
             </select>
           </div>
         </div>
@@ -219,12 +179,12 @@
             </button>
           </div>
           <div class="control">
-            <a href="./gur-landing.html" class="button is-danger">বাতিল</a>
+            <a href="./ghee-landing.html" class="button is-danger">বাতিল</a>
           </div>
         </div>
       </form>
     </div>
-    <script src="./costing-gur.js"></script>
+    <script src="./costing-ghee.js"></script>
     <script>
       document.getElementById("form").addEventListener("submit", function (e) {
         e.preventDefault(); // Prevent the default form submission
@@ -243,7 +203,7 @@
 
         // Send a POST request to your Google Apps Script
         fetch(
-          "https://script.google.com/macros/s/AKfycbzoMq4ikKx13BFMegLubflAPoMaoqEG5EQzvGxqUrj6E176U9GcMk8mvHrt6x1lElq2/exec",
+          "https://script.google.com/macros/s/AKfycbzkuh8wpKYcFIHFfO_GIMGwvBUZ3cT1DT_j4vJUooj7KorbHRVKR77QSdVSKXF_iP0cFg/exec",
           {
             redirect: "follow",
             method: "POST",
